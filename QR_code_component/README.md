@@ -16,12 +16,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL](https://github.com/SG75/FrontendMentor/tree/main/QR_code_component)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://frontend-mentor-rho-eight.vercel.app/)
 
 - ## My process
-- used the the color picker tool of 'paint32' in windows to pick the colors for background,h1 and p elements
+- used the colour picker tool of 'paint32' in windows to pick the colours for the background,h1 and p elements
 -
 
 ### Built with
