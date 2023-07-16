@@ -1,0 +1,150 @@
+:root {
+  --pale_blue: hsl(225, 100%, 94%);
+  --bright_blue: hsl(245, 75%, 52%);
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale_blue);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.container {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* we want the child elements to be with in this container, hence relative*/
+  width: 450px;
+  height: 700px;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  background-color: #fff;
+  /* box-shadow: 0px 30px 60px -25px red; */
+  box-shadow: 0 5px 15px -10px var(--desaturated_blue);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--dark_blue);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.container__top {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  background-image: url("images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.container__bottom {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  height: auto;
+  padding: 50px;
+  color: var(--dark_blue);
+}
+
+.container__plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--very_pale_blue);
+  border-radius: 15px;
+  /* padding: 5px; */
+  margin: 5px;
+  color: var(--dark_blue);
+}
+.container__item:last-child {
+  margin-left: 40px;
+  padding-right: 20px;
+}
+
+.container__plan img {
+  padding: 20px;
+}
+a {
+  color: var(--bright_blue);
+}
+
+.container__buttons {
+  display: flex;
+  /* margin: 25px; */
+  flex-direction: column;
+}
+.container__payment {
+  background-color: var(--bright_blue);
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  box-shadow: 0 10px 15px -10px var(--bright_blue);
+  margin-top: 25px;
+}
+
+.container__payment:hover {
+  background-color: var(--dark_blue);
+}
+
+.container__cancel {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: var(--dark_blue);
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/* Styles for mobile devices with a maximum width of 375px */
+@media (max-width: 375px) {
+  body {
+    /* background-color: aqua; */
+    /* background-image: url("images/pattern-background-mobile.svg"); */
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    font-size: 0.8rem;
+  }
+}
