@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/SG75/FrontendMentor/tree/main/Order_summary_component)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site URL](https://order-summary-component-seven-pi.vercel.app/)
 
 ## My process
 
@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-- learnt how css property for position , absolute and relative works.
+- learnt how css property for position, absolute and relative works.
 
 ### Useful resources
 
