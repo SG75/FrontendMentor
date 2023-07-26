@@ -40,9 +40,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL:[solution](https://github.com/SG75/FrontendMentor/tree/main/tip_calculator)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [tip-calculator](https://tip-calculator-swart-iota.vercel.app/)
 
 ## My process
 
