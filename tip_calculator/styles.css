@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+/* font-family: "Space Mono", monospace; */
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%); /* body background*/
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-grayish-cyan);
+  font-family: "Space Mono", monospace;
+  /* margin: 30px; */
+}
+
+/* logo styles */
+.logo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* contianer styles */
+.container {
+  position: relative;
+  display: flex;
+  width: 945px;
+  height: 500px;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
+  /* border: 2px solid coral; */
+}
+
+/* contianer input styles */
+
+.container__input {
+  height: 435px;
+  width: 435px;
+  /* background-color: aqua; */
+  border-radius: 15px;
+  margin: 30px;
+  /* border: 1px solid purple; */
+}
+
+.container__bill {
+  position: absolute;
+  display: inline-block;
+  /* margin-top: 10px; */
+  /* margin-left: 25px; */
+  /* border: 2px solid green; */
+}
+.container__bill label {
+  /* margin-top: 25px; */
+  margin-left: 15px;
+  /* font-size: 1.2em; */
+}
+
+.container__input--img {
+  position: relative;
+}
+
+.container--dollar {
+  position: absolute;
+  left: 30px; /* dollar symbol position inside input field*/
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  top: 25px;
+}
+.container__bill input {
+  background-color: var(--Very-light-grayish-cyan);
+  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  height: 45px;
+  width: 400px; /* 400px*/
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  /* padding-left: 30px; */
+  text-align: right;
+  outline: none;
+  font-family: "Space Mono", monospace;
+}
+.container__bill input:hover {
+  border: 2px solid var(--Strong-cyan);
+}
+
+.selected {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+/* to remove the scroll button of the input field */
+
+.container__bill input::-webkit-inner-spin-button,
+.container__bill input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 5px;
+}
+
+.container__output {
+  height: 435px;
+  width: 435px;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.container__tip__label {
+  top: 120px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin: 10px;
+  margin-bottom: 20px;
+  /* font-size: 1.2em; */
+  position: absolute;
+}
+.container__tip {
+  width: 100%;
+  max-width: 435px;
+  display: grid;
+  grid-template-columns: 130px 130px 130px; /* Define the width of each column */
+  grid-template-rows: 50px 50px; /* Define the height of each row */
+  grid-gap: 10px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 125px;
+  /* margin-left: 15px; */
+}
+
+.container__tip__box {
+  background-color: var(--Very-dark-cyan);
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--Very-light-grayish-cyan);
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.container__tip__box:hover {
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+/* .container__tip__box:active {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+} */
+/* 
+.container__tip__box:focus {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+} */
+
+.container__tip__box:nth-child(6) {
+  background-color: var(--Very-light-grayish-cyan);
+  /* background-color: transparent; */
+  align-content: center;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+  color: var(--Dark-grayish-cyan);
+  font-weight: bold;
+  font-family: "Space Mono", monospace;
+}
+
+.container__tip__box:nth-child(6) input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: right;
+  background-color: var(--Light-grayish-cyan);
+  width: 130px;
+  height: 45px;
+  /* margin: 5px; */
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.container__tip__box:nth-child(6) input:hover {
+  border: 2px solid var(--Strong-cyan);
+}
+
+.container__tip__box:nth-child(6) input::-webkit-inner-spin-button,
+.container__tip__box:nth-child(6) input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* container people styles */
+.container__people {
+  margin-top: 60px;
+}
+
+.container__people label {
+  margin-left: 10px;
+  /* font-size: 1.2em; */
+  margin-bottom: 20px;
+  /* justify-content: flex-end; */
+  max-width: 435px;
+}
+#errorMessage {
+  margin-left: 100px;
+  /* position: end; */
+}
+
+.container--people {
+  position: absolute;
+  left: 30px; /* dollar symbol position inside input field*/
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  top: 45px;
+}
+
+#people {
+  background-color: var(--Very-light-grayish-cyan);
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  height: 45px;
+  width: 400px; /* 400px*/
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  /* padding-left: 30px; */
+  text-align: right;
+  outline: none;
+  font-family: "Space Mono", monospace;
+}
+
+/* .red-border {
+  border: 2px solid red;
+} */
+
+/* to remove the scroll button of the input field */
+
+.container__people input::-webkit-inner-spin-button,
+.container__people input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 5px;
+}
+
+.container__output {
+  display: grid;
+  width: 100%;
+  max-width: 435px;
+  grid-template-columns: 110px 190px; /* Define the width of each column */
+  grid-template-rows: 50px 50px 50px; /* Define the height of each row */
+  gap: 60px;
+  margin: 30px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip {
+  /* border: 1px solid aquamarine; */
+  margin-top: 55px;
+  margin-left: 10px;
+  display: block;
+}
+
+.tip span:nth-child(1) {
+  color: var(--Light-grayish-cyan);
+}
+
+.tip span:nth-child(3) {
+  color: var(--Grayish-cyan);
+}
+
+.money {
+  /* border: 1px solid coral; */
+  font-size: 36px;
+  color: var(--Strong-cyan);
+  margin-top: 55px;
+  text-align: right;
+  width: 100%;
+  max-width: 200px;
+}
+
+#money_tip,
+#money_total {
+  margin-right: 5px;
+}
+
+/* Add this CSS to ensure img and span are displayed inline
+.money img,
+.money span {
+  display: inline;
+} */
+
+.money img {
+  transform: scale(2);
+  margin-bottom: 5px;
+  margin-right: 8px;
+}
+
+/* .money span:nth-child(1) {
+  margin-left: 20px;
+} */
+.container__output button {
+  position: absolute;
+  top: 350px;
+  left: 45px;
+  width: 300px;
+  height: 45px;
+  background-color: var(--Strong-cyan);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: var(--Very-dark-cyan);
+  font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
+}
+.container__output button:hover {
+  background-color: var(--Light-grayish-cyan);
+}
+
+.container__tip__box.selected {
+  background-color: var(--Strong-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .container__input {
+    width: 100%;
+    max-width: 375px;
+  }
+  .container__bill input {
+    width: 330px;
+    margin: 26px;
+  }
+  .container__people input {
+    width: 330px;
+    margin: 26px;
+  }
+  .container__output {
+    width: 100%;
+    max-width: 375px;
+    /* margin: auto; */
+    margin-top: 10px;
+  }
+  .container__tip {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    width: auto;
+  }
+  .container__tip__box:nth-child(6) {
+    width: fit-content;
+  }
+  .container__tip__box:nth-child(6) input {
+    width: 170px;
+  }
+  .contianer__output button {
+    top: 300px;
+    width: 90%;
+  }
+  .money img {
+    transform: scale(1.5);
+    margin-right: 5px;
+  }
+}

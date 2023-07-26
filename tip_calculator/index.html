@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <!-- APP logo -->
+    <div class="logo"><img src="images/logo.svg" alt="logo image" /></div>
+    <!-- tip calculator container -->
+    <div class="container">
+      <!-- input continer -->
+      <div class="container__input">
+        <!-- container for bill amount -->
+        <div class="container__bill">
+          <label for="bill">Bill</label><br />
+          <div class="container__input--img">
+            <img
+              class="container--dollar"
+              src="images/icon-dollar.svg"
+              alt="dollar symbol"
+            />
+            <input id="bill" type="number" required value="0" />
+          </div>
+        </div>
+        <!-- container for tip percentage -->
+        <label class="container__tip__label">Select Tip % </label>
+        <div class="container__tip">
+          <!-- <label class="container__tip__label">Select Tip % </label> -->
+          <div class="container__tip__box" onclick="selectTip(5)">5%</div>
+          <div class="container__tip__box" onclick="selectTip(10)">10%</div>
+          <div class="container__tip__box" onclick="selectTip(15)">15%</div>
+          <div class="container__tip__box" onclick="selectTip(25)">25%</div>
+          <div class="container__tip__box" onclick="selectTip(50)">50%</div>
+          <div class="container__tip__box">
+            <input
+              placeholder="Custom"
+              type="number"
+              id="customTip"
+              oninput="calculateCustomTip()"
+            />
+          </div>
+        </div>
+        <!-- container for number of people -->
+        <div class="container__people">
+          <label for="people">Number of People</label
+          ><span id="errorMessage" class="hidden" style="color: red">
+            Can't be zero</span
+          ><br />
+          <div class="container__input--img">
+            <img
+              class="container--people"
+              src="images/icon-person.svg"
+              alt="symbol for a person"
+            />
+            <input id="people" type="number" required min="1" value="0" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container__output">
+        <div class="tip">
+          <span>Tip Amount</span><br />
+          <span>/ person</span>
+        </div>
+        <div class="money">
+          <img src="images/dollar-cyan.svg" /><span id="money_tip">0.00</span>
+        </div>
+        <div class="tip">
+          <span>Total &nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+          <span>/ person</span>
+        </div>
+        <div class="money">
+          <img src="images/dollar-cyan.svg" /><span id="money_total">0.00</span>
+        </div>
+        <button id="reset" onclick="resetCalculator()">RESET</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gururaj Sudhindra</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
