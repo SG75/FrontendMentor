@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div
+        class="result container--left"
+        role="region"
+        aria-labelledby="yourResultHeading"
+      >
+        <h2 id="yourResultHeading">Your Result</h2>
+        <div class="container--circle">
+          <h1>76</h1>
+          <span>of 100</span>
+        </div>
+        <h1 class="container__h1">Great</h1>
+        <p class="container__P">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div
+        class="result container--right"
+        role="region"
+        aria-labelledby="summaryHeading"
+      >
+        <h2 id="summaryHeading">Summary</h2>
+        <div class="container--reaction" role="listitem">
+          <img src="./assets/images/icon-reaction.svg" alt="reaction icon" />
+          <span class="summaryReaction">Reaction</span>
+          <span class="marks">80&nbsp;</span><span class="per100">/ 100</span>
+        </div>
+        <div class="container--memory" role="listitem">
+          <img src="./assets/images/icon-memory.svg" alt="memory icon" />
+          <span class="summaryMemory">Memory&nbsp;&nbsp;</span>
+          <span class="marks">92&nbsp;</span><span class="per100">/ 100</span>
+        </div>
+        <div class="container--verbal" role="listitem">
+          <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
+          <span class="summaryVerbal">Verbal&nbsp;&nbsp;</span>
+          <span class="marks">61&nbsp;</span><span class="per100">/ 100</span>
+        </div>
+        <div class="container--visual" role="listitem">
+          <img src="./assets/images/icon-visual.svg" alt="visual icon" />
+          <span class="summaryVisual">Visual&nbsp;&nbsp;</span>
+          <span class="marks">72&nbsp;</span><span class="per100">/ 100</span>
+        </div>
+        <button class="container__button">Continue</button>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/SG75" target="_blank"
+        >Gururaj Sudhindra</a
+      >.
+    </div>
+  </body>
+</html>
